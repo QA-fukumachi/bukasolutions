@@ -110,7 +110,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0;
   transition: var(--transition);
   border-bottom: 1px solid transparent;
-  background: var(--nav-bg);
 }
 
 .navbar.scrolled, .navbar.menu-open {
