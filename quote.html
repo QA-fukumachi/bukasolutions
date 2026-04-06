@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Quote | Buka Solutions</title>
+  <meta name="description" content="Request a free quote for your remodel, repair, or renovation project in Boulder, CO.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo text-gradient">BUKA SOLUTIONS</a>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav-item dropdown active">
+          <a href="#" style="color: var(--accent-color);">Quotes ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="quote.html" style="color: var(--accent-color);">Get a Quote</a></li>
+            <li><a href="process.html">Remodel & Build Process</a></li>
+          </ul>
+        </li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="review.html">Review</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="page-header">
+    <div class="container fade-up">
+      <h1 class="text-gradient">Get A Free Quote</h1>
+      <p>Tell us about your project — the more detail, the better. Include the type of work you need, the property address, and your preferred timeline. We personally review every inquiry and look forward to bringing your vision to life.</p>
+    </div>
+  </header>
+
+  <!-- Quote Form Section -->
+  <section class="section pt-0" style="padding-top: 0;">
+    <div class="container fade-up" style="max-width: 800px;">
+      
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- Web3Forms Hidden Inputs -->
+        <input type="hidden" name="access_key" value="9ee911c0-95b7-4c72-800e-daccff15196f">
+        <input type="hidden" name="subject" value="New Quote Request — Buka Solutions">
+        <input type="hidden" name="from_name" value="Buka Solutions Website">
+        <input type="hidden" name="replyto" id="replyto-field" value="">
+        <input type="hidden" name="redirect" value="https://avarsimashvili.github.io/bukasolutions/thank-you.html">
+
+        <div class="quote-wrap">
+          <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" class="form-control" required placeholder="John">
+          </div>
+          <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" class="form-control" required placeholder="Doe">
+          </div>
+        </div>
+
+        <div class="quote-wrap">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="form-control" required placeholder="(720) 000-0000">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
+          </div>
+        </div>
+
+        <div class="quote-wrap full">
+          <div class="form-group">
+            <label for="service">Service Type</label>
+            <select id="service" name="service" class="form-control" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option value="Kitchen Remodel">Kitchen Remodel</option>
+              <option value="Bathroom Renovation">Bathroom Renovation</option>
+              <option value="Flooring">Flooring</option>
+              <option value="Walls / Drywall">Walls / Drywall</option>
+              <option value="Windows & Doors">Windows & Doors</option>
+              <option value="Garage">Garage</option>
+              <option value="Yard / Outdoor">Yard / Outdoor</option>
+              <option value="Around the House">Around the House</option>
+              <option value="Babyproofing">Babyproofing</option>
+              <option value="Treehouse">Treehouse</option>
+              <option value="General Repair">General Repair</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="quote-wrap full">
+          <div class="form-group">
+            <label for="message">Message / Project Details</label>
+            <textarea id="message" name="message" class="form-control" required placeholder="Describe your project, location, and timeline..."></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-accent" style="width: 100%;">Submit My Request</button>
+        
+        <p class="privacy-note">
+          <span>🔒</span> Your information stays with us. We will never sell or share your personal data — period.
+        </p>
+      </form>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container fade-up">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="text-gradient">BUKA SOLUTIONS</h3>
+          <p>Professional remodeling, renovation & repair.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p>Phone: <a href="tel:7202180076">(720) 218-0076</a></p>
+          <p>Location: Boulder, CO</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Buka Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
