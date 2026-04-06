@@ -62,3 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+// Reset forms on back navigation
+window.addEventListener('pageshow', () => {
+  document.querySelectorAll('form').forEach(form => form.reset());
+});
