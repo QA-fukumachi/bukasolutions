@@ -6,7 +6,7 @@
   --text-muted: #a0a0a0;
   --accent-color: #e5b365; /* Sophisticated gold/bronze for remodeling */
   --accent-hover: #c4964d;
-  --nav-bg: rgba(8, 8, 8, 0.85);
+  --nav-bg: #000000;
   --border-color: rgba(255, 255, 255, 0.1);
   --font-family: 'Outfit', sans-serif;
   --transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
@@ -110,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0;
   transition: var(--transition);
   border-bottom: 1px solid transparent;
+  background: var(--nav-bg);
 }
 
 .navbar.scrolled, .navbar.menu-open {
@@ -161,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 100%;
   left: 0;
-  background: rgba(15, 15, 15, 0.95);
+  background: var(--nav-bg);
   backdrop-filter: blur(10px);
   min-width: 200px;
   opacity: 0;
